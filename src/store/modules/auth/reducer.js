@@ -1,7 +1,18 @@
-const initialState = {};
+import produce from 'immer';
 
-export default function(state = initialState, action) {
+const INITIAL_STATE = {
+  token: null,
+  signed: false,
+  loading: false,
+};
+
+export default function(state = INITIAL_STATE, action) {
   switch (action.type) {
+    case '@auth/SIGN_IN_SUCCESS':
+      return produce(state, draft => {
+        draft.token = action.payload.token;
+        draft.signed = true;
+      });
     default:
       return state;
   }

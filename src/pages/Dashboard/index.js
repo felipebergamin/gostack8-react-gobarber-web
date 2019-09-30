@@ -1,7 +1,9 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import api from '~/services/api';
 
 export default function dashboard() {
+  api.get('appointments');
+
   return <h1>Dashboard</h1>;
 }

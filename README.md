@@ -1,3 +1,8 @@
+## Pacotes relacionados
+
+- [Mobile (React Native)](https://github.com/felipebergamin/gostack8-reactnative-gobarber)
+- [Back-end (NodeJS)](https://github.com/felipebergamin/gostack8-gobarber)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
